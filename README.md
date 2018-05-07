@@ -133,7 +133,6 @@ for i in $(ls | grep GO_0.05); do cd $i; source ~/Tvedora_dev_RNAseq/scripts/GO_
 ~/Tvedora_dev_RNAseq/scripts/Stackedbars_barchat.R
 
 2. script to display XY'/XX ratio of sex-biased genes, non-biased genes, as well as total genes.
-~/Tvedora_dev_RNAseq/scripts/SBgene_ratio.R
 ~/Tvedora_dev_RNAseq/scripts/SB_G43G46.R
 ~/Tvedora_dev_RNAseq/scripts/Expression_ratio.R
 
