@@ -1,0 +1,5 @@
+sample	pop	stage	sex	group
+Tv1_463	Tv	46	XY	Tv_46_XY
+Tv2_461	Tv	46	XY	Tv_46_XY
+Tv2_462	Tv	46	XX	Tv_46_R
+Tv2_464	Tv	46	XY	Tv_46_XY

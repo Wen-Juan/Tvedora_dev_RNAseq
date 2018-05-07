@@ -1,0 +1,3 @@
+model_coefficients	XYa43/XX43
+Tv_43_R	1
+Tv_43_XX	-1

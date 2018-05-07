@@ -1,0 +1,10 @@
+sample	pop	stage	sex	group
+"Tv1_431"	"Tv"	"43"	"XY"	"Tv_43_R"
+"Tv2_431"	"Tv"	"43"	"XY"	"Tv_43_R"	
+"Tv5_431"	"Tv"	"43"	"XX"	"Tv_43_XX"
+"Tv5_432"	"Tv"	"43"	"XY"	"Tv_43_R"	
+"Tv5_433"	"Tv"	"43"	"XX"	"Tv_43_XX"	
+"Tv5_434"	"Tv"	"43"	"XY"	"Tv_43_R"
+"Tv6_431"	"Tv"	"43"	"XY"	"Tv_43_R"
+"Tv6_432"	"Tv"	"43"	"XX"	"Tv_43_XX"
+"Tv6_433"	"Tv"	"43"	"XX"	"Tv_43_XX"

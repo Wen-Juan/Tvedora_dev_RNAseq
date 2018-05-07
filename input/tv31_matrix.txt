@@ -1,0 +1,3 @@
+model_coefficients	XY31/XX31
+Tv_31_XY	1
+Tv_31_XX	-1

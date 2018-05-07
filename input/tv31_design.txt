@@ -1,0 +1,13 @@
+sample	pop	stage	sex	group
+"Tv1_314"	"Tv"	"31"	"XX"	"Tv_31_XX"
+"Tv2_317"	"Tv"	"31"	"XX"	"Tv_31_XY"
+"Tv2_312"	"Tv"	"31"	"XX"	"Tv_31_XY"
+"Tv2_318"	"Tv"	"31"	"XX"	"Tv_31_XX"
+"Tv2_319"	"Tv"	"31"	"XX"	"Tv_31_XX"	
+"Tv5_312"	"Tv"	"31"	"XX"	"Tv_31_XX"	
+"Tv5_313"	"Tv"	"31"	"XY"	"Tv_31_XY"
+"Tv5_314"	"Tv"	"31"	"XX"	"Tv_31_XX"
+"Tv6_312"	"Tv"	"31"	"XX"	"Tv_31_XX"
+"Tv6_313"	"Tv"	"31"	"XX"	"Tv_31_XX"
+"Tv6_316"	"Tv"	"31"	"XY"	"Tv_31_XY"
+"Tv6_318"	"Tv"	"31"	"XY"	"Tv_31_XY"

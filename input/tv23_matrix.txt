@@ -1,0 +1,3 @@
+model_coefficients	XY23/XX23
+Tv_23_XY	1
+Tv_23_XX	-1

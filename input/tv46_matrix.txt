@@ -1,0 +1,4 @@
+model_coefficients	XY46/XX46	XY46/XXm46	XXm46/XX46 	XXM/XXF
+Tv_46_XY	1	1	0	0.5
+Tv_46_XX	-1	0	-1	-1
+Tv_46_R	0	-1	1	0.5

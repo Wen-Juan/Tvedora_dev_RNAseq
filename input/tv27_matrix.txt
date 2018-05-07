@@ -1,0 +1,3 @@
+model_coefficients	XY27/XX27
+Tv_27_XY	1
+Tv_27_XX	-1

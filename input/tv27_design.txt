@@ -1,0 +1,9 @@
+sample	pop	stage	sex	group
+"Tv1_271"	"Tv"	"27"	"XY"	"Tv_27_XY"
+"Tv1_272"	"Tv"	"27"	"XX"	"Tv_27_XX"	
+"Tv2_273"	"Tv"	"27"	"XX"	"Tv_27_XX"
+"Tv2_275"	"Tv"	"27"	"XY"	"Tv_27_XY"
+"Tv5_271"	"Tv"	"27"	"XY"	"Tv_27_XY"
+"Tv5_273"	"Tv"	"27"	"XX"	"Tv_27_XX"	
+"Tv6_272"	"Tv"	"27"	"XY"	"Tv_27_XY"	
+"Tv6_273"	"Tv"	"27"	"XX"	"Tv_27_XX"

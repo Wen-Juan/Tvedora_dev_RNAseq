@@ -1,0 +1,9 @@
+sample	pop	stage	sex	group
+"Tv1_231"	"Tv"	"23"	"XY"	"Tv_23_XY"
+"Tv1_232"	"Tv"	"23"	"XX"	"Tv_23_XX"
+"Tv2_231"	"Tv"	"23"	"XX"	"Tv_23_XX"
+"Tv2_232"	"Tv"	"23"	"XY"	"Tv_23_XY"	
+"Tv5_233"	"Tv"	"23"	"XX"	"Tv_23_XX"
+"Tv5_234"	"Tv"	"23"	"XY"	"Tv_23_XY"
+"Tv6_234"	"Tv"	"23"	"XY"	"Tv_23_XY"	
+"Tv6_235"	"Tv"	"23"	"XX"	"Tv_23_XX"
