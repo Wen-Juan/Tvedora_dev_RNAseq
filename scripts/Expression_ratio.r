@@ -15,10 +15,10 @@ group2 <- 'XX'
 col1 <- rgb(red = 0, green = 0, blue = 0, alpha = 0.1)
 col2 <- rgb(red = 1, green = 0, blue = 0, alpha = 0.6)
 
-datapath <- '/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/'
-kdata <- read.table("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv46male_boxplot.txt",header = T)
-#kdata <- read.table("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv46.txt", header = T)
-#kdata <- read.table("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv43.txt",header = T)
+datapath <- '~/Tvedora_dev_RNAseq/input/'
+kdata <- read.table("~/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv46male_boxplot.txt",header = T)
+#kdata <- read.table("~/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv46.txt", header = T)
+#kdata <- read.table("~/Tvedora_dev_RNAseq/input/LogCPM_0.05_tv43.txt",header = T)
 str(kdata)
 
 ###restrict the analysis to sex-biaxed genes
@@ -47,7 +47,7 @@ map.data$ratio <- log2(group1.expr/group2.expr)
 map.data$ratio[mapply(is.infinite, map.data$ratio)] <- NA
 
 #ggplot of boxplot
-pdf("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/Figure_4a_g46.pdf", width=8, height=8)
+pdf("~/Tvedora_dev_RNAseq/output/Figure_4a_g46.pdf", width=8, height=8)
 ggplot(map.data, aes(x=chr, y=ratio, fill=chr)) +
   scale_fill_manual(values = c("red","grey","grey","grey","grey","grey","grey","grey","grey","grey")) +
   scale_y_continuous(limits = c(-6,6)) + 
@@ -74,7 +74,7 @@ library("microbenchmark")
 require(zoo)
 
 
-dn_ds <-read.table("/Users/Wen-Juan/my_postdoc/useful_scripts/Rana_Transcriptome/input/dnds/amm88perc_annotation_dnds.txt", header = T)
+dn_ds <-read.table("~/Rana_Transcriptome/input/dnds/amm88perc_annotation_dnds.txt", header = T)
 str(dn_ds)
 
 map.data <- dn_ds
@@ -85,7 +85,7 @@ chr_1_end <-  180000000
 zoo.dat <- zoo(map.data$dnds[map.data$chr=='Chr02'], c(chr1_1_start,chr_1_end))
 y <- rollapply(zoo.dat, 40, FUN = mean, align = 'center', na.rm=TRUE) 
 
-pdf("/Users/Wen-Juan/my_postdoc/useful_scripts/Rana_Transcriptome/output/figures/Figure_dnds_sexchr2.pdf", width=8, height=8)
+pdf("~/Rana_Transcriptome/output/figures/Figure_dnds_sexchr2.pdf", width=8, height=8)
 par(mar=c(5,5,4,3)+0.6) 
 #plot(c(0, chr_1_end), c(0,2), axes=F, lwd=2, xlab="Position (bp)", ylab="gene expression ratio log2(XY0/XX)", cex.axis=1.5, cex.lab=1.2, col="white")
 plot(c(0, chr_1_end), c(0,0.4), axes=F, lwd=2, xlab="Position (bp)", ylab="dN/dS", cex.axis=1.5, cex.lab=1.2, col="white")

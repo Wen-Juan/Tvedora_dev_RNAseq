@@ -6,12 +6,12 @@ library(ggplot2)
 library(reshape2)
 
 #set up working directory
-setwd <-'/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/'
-datapath <- '/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/'
-results <- '/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/'
+setwd <-'~/Tvedora_dev_RNAseq/'
+datapath <- '~/Tvedora_dev_RNAseq/input/'
+results <- '~/Tvedora_dev_RNAseq/output/'
 
 #load datasets
-sb <- read.table('/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/DE_gene_log.txt', header = TRUE)
+sb <- read.table('~/Tvedora_dev_RNAseq/input/DE_gene_log.txt', header = TRUE)
 str(sb)
 
 sb <- data.frame(with(sb,sb[order(Gosner_stage,Fold_change,Sex_bias),]))

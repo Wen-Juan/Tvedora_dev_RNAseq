@@ -1,5 +1,5 @@
 #before running Prank, need to prepare the input file.
-#for codon alignment, it requires the sequences to be length which can multiply by 3.
+#for codon alignment, it requires the sequences to be the length which can multiply by 3.
 
 module add UHTS/Assembler/TransDecoder/2.0.1
 TransDecoder.LongOrfs -t file.fasta > file_output.cds
