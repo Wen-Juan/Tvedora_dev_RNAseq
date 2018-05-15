@@ -41,7 +41,7 @@ venn_fbias_out <- arrangeGrob(gTree(children=venn.plot),ncol = 1 )
 ggsave(file="shared_fembias.pdf", venn_fbias_out, path = "~/Tvedora_dev_RNAseq/output/")
 
 #overlap of G43 female-biased genes resulting from comparison between XX females, or XY0 females and XY0 males.
-venn.plot1 <- venn.diagram(list(G43=as.character(fbis_g43), G43XY=as.character(fbis_g43xy)), filename =NULL,
+venn.plot1 <- venn.diagram(list(XX_f=as.character(fbis_g43), XY0_f=as.character(fbis_g43xy)), filename =NULL,
                           fill=c("orange","red"),
                           ext.line.lwd = 2,
                           cex = 1,
@@ -49,10 +49,10 @@ venn.plot1 <- venn.diagram(list(G43=as.character(fbis_g43), G43XY=as.character(f
 
 grid.arrange(gTree(children=venn.plot1),ncol = 1 )
 venn_fbias_out <- arrangeGrob(gTree(children=venn.plot1),ncol = 1 )
-ggsave(file="g43_XYXXfemale_fembias.pdf", venn_fbias_out, path = "~/Tvedora_dev_RNAseq/output/")
+ggsave(file="g43_XYXXfemale_fembias.pdf", venn_fbias_out, path = "~/Tvedora_dev_RNAseq/")
 
 ##overlap of G46 female-biased genes resulting from comparison between XX females and either XY0 males or XX male.
-venn.plot2 <- venn.diagram(list(G46=as.character(fbis_g46), G46XX=as.character(fbis_g46xx)), filename =NULL,
+venn.plot2 <- venn.diagram(list(XY0_m=as.character(fbis_g46), XX_m=as.character(fbis_g46xx)), filename =NULL,
                            fill=c("orange","red"),
                            ext.line.lwd = 2,
                            cex = 1,
