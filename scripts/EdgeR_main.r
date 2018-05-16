@@ -31,8 +31,8 @@ FDR2use = as.numeric(paste(args[2]))
 # sub_analyse <- 'tv46'
 # FDR2use  <- 0.05
 
-datapath <- "/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/"
-outpath <- paste("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/", sub_analyse, sep="")
+datapath <- "~/Tvedora_dev_RNAseq/input/"
+outpath <- paste("~/Tvedora_dev_RNAseq/output/", sub_analyse, sep="")
 dir.create(file.path(outpath))
 
 annotation <- read.delim(file.path(datapath, "tv_annotation.txt"), sep="\t", header=TRUE, stringsAsFactors=FALSE) # BRM_annotation.txt annotation_out.txt
@@ -89,7 +89,7 @@ col.M31 <- rgb(23/255, 87/255, 120/255, 3/4)
 col.F31 <- rgb(23/255, 87/255, 120/255, 3/4)
 col.M43 <- rgb(88/255, 135/255, 37/255, 3/4)
 col.F43 <- rgb(88/255, 135/255, 37/255, 3/4)
-col.R43 <- rgb(88/255, 135/255, 37/255, 3/4) #for tvedora
+col.R43 <- rgb(88/255, 135/255, 37/255, 3/4) 
 col.M46 <- rgb(113/255, 250/255, 241/255, 3/4)
 col.F46 <- rgb(113/255, 250/255, 241/255, 3/4)
 col.R46 <- rgb(113/255, 250/255, 241/255, 3/4)
@@ -579,9 +579,9 @@ write.table(DE_counts, file=file.path(outpath, paste('clusters',FDR2use, '_', su
 }
 
 #pvclust is an R package for assessing the uncertainty in hierarchical cluster analysis. 
-pdf("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_complete.pdf", width=8, height=8)
-pdf("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_average.pdf", width=8, height=8)
-pdf("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_ward.pdf", width=8, height=8)
+pdf("~/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_complete.pdf", width=8, height=8)
+pdf("~/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_average.pdf", width=8, height=8)
+pdf("~/Tvedora_dev_RNAseq/output/bootstrap_forheatm_g46_ward.pdf", width=8, height=8)
 Pv_clust_fit1_46 <- pvclust(d, method.hclust="average", method.dist="euclidean", nboot=10000) ## put nboot to 10000 for serious work
 Pv_clust_fit2_46 <- pvclust(d, method.hclust="ward.D2", method.dist="euclidean", nboot=10000) ## put nboot to 10000 for serious work
 Pv_clust_fit3_46 <- pvclust(d, method.hclust="complete", method.dist="euclidean", nboot=10000) ## put nboot to 10000 for serious work
