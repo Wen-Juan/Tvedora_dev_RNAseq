@@ -4,13 +4,13 @@ install.packages("ggplot2")
 library(faraway)
 library(ggplot2)
 
-setwd("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/")
-datapath <- '/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/'
-results <- '/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/output/'
+setwd("~/Tvedora_dev_RNAseq/")
+datapath <- '~/Tvedora_dev_RNAseq/input/'
+results <- '~/Tvedora_dev_RNAseq/output/'
 
 #load the dataset
 #compare the ratio of male biased gene among fold changes across stages
-  sb_ratio <- read.table("/Users/Wen-Juan/my_postdoc/useful_scripts/Tvedora_dev_RNAseq/input/sb_ratio.txt", header = TRUE)
+  sb_ratio <- read.table("~/Tvedora_dev_RNAseq/input/sb_ratio.txt", header = TRUE)
   str(sb_ratio)
   
   ggplot(sb_ratio, aes(x = foldc, y=ratio_mbias, group=stage), cex=2) + 
