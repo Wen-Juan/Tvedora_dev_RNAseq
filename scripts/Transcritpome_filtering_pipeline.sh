@@ -66,12 +66,12 @@ module add UHTS/Analysis/kallisto/0.43.0
 
 ###based on expression level, filtering transcriptome by selecting the highest expressed transcript per gene.
 module add UHTS/Analysis/kallisto/0.43.0
-%  $TRINITY_HOME/util/filter_low_expr_transcripts.pl --matrix Trinity_tv.txt --transcripts Tv_transc_300bp.fasta \
---min_expr_any 3 \
+%  $TRINITY_HOME/util/filter_low_expr_transcripts.pl --matrix Trinity_tmm_tv_norm.txt --transcripts Tv_transc_300bp.fasta \
+--min_expr_any 1 \
 --highest_iso_only 
 
 ### the output file
-tv_tpm3_mostexp.fasta 
+tv_tmm_mostexp.fasta 
 Total transcripts
 ********159109******
 
@@ -85,7 +85,7 @@ cd-hit-est -i tv_tpm3_mostexp.fasta -out tv_tpm3_mostexp_tmm_90iden.fasta -c 0.9
 
 ################3.4) remove ERCC RNA spike-in control transcripts and ribosome transcripts with custom bash scripts##############
 ### final transcriptome file
-tv_tpm3_mostexp_tmm_90iden.pep
+tv_mostexp_tmm_90iden.pep
 transcript number 67288
 
 
