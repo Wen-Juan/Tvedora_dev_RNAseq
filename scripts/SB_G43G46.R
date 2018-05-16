@@ -1,5 +1,3 @@
-
-
 #load dataset from output of edgeR_main.R.
 violineData_de_G43 <- read.table("~/Tvedora_dev_RNAseq/input/violinData_de_G43.txt", header = TRUE)
 
